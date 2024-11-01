@@ -197,6 +197,6 @@ protected void processMessage(ChannelHandlerContext ctx, RpcMessage rpcMessage) 
 
 <img src="/img/blog/rpc_multi-protocol/00-netty-layer.png" width="700px" />
 
-上面已经讲了请求发送时，serverHandler/clientHandler和NettyRemoting(包括RM、TM、TC)的处理，知道了从外部到netty处理器再到内部的DefaultCoodinator的过程，但我们还缺Decoder/Encoder没讲，这里面会进行协议的解析/封装，也会进行序列化和反序列化，请看 [Seata的RPC通信源码分析02：协议篇](seata-rpc-multi-protocol02.md)
+上面已经讲了请求发送时，serverHandler/clientHandler和NettyRemoting(包括RM、TM、TC)的处理，知道了从外部到netty处理器再到内部的DefaultCoordinator的过程，但我们还缺Decoder/Encoder没讲，这里面会进行协议的解析/封装，也会进行序列化和反序列化，请看 [Seata的RPC通信源码分析02：协议篇](seata-rpc-multi-protocol02.md)
 
 
